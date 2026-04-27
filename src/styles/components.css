@@ -320,3 +320,79 @@ button, a, input, select, textarea {
   /* Remove default outline; :focus-visible above handles it */
   outline: none;
 }
+
+/* ─── App card ────────────────────────────────────────────────────────────── */
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: var(--r-lg);
+  padding: var(--sp-2);
+  text-decoration: none;
+  transition: background var(--t-fast);
+}
+.app-card:hover { background: var(--surface-high); }
+
+.app-card-icon {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--r-lg);
+  background: var(--surface-high);
+  object-fit: cover;
+}
+
+.app-card-name {
+  margin: 0;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.app-card-dev {
+  margin: 0;
+  font-size: .72rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.app-card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: .7rem;
+  color: var(--text-secondary);
+}
+
+/* ─── Category grid ───────────────────────────────────────────────────────── */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-3);
+}
+
+@media (min-width: 540px)  { .category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 900px)  { .category-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4) var(--sp-2);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  text-decoration: none;
+  transition: background var(--t-fast), border-color var(--t-fast);
+  text-align: center;
+}
+.category-card:hover { background: var(--surface-high); border-color: var(--line-strong); }
+
+.cat-icon { font-size: 1.8rem; }
+.cat-label { font-size: .78rem; font-weight: 600; color: var(--text-secondary); }
