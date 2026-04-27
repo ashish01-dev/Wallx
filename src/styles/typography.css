@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.display { font-size: clamp(2rem, 6vw, 4rem); font-weight: 700; line-height: 1.1; }
+.heading-xl { font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 700; }
+.heading-lg { font-size: clamp(1.2rem, 3vw, 1.75rem); font-weight: 600; }
+.heading-md { font-size: 1.25rem; font-weight: 600; }
+.heading-sm { font-size: 1rem; font-weight: 600; }
+.body-lg { font-size: 1rem; line-height: 1.7; color: var(--text-secondary); }
+.body-sm { font-size: .875rem; color: var(--text-secondary); }
+.caption { font-size: .75rem; color: var(--text-muted); }
+.label { font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); }
+
+p { margin: 0 0 .75em; }
+p:last-child { margin-bottom: 0; }
+
+code {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: .875em;
+  background: var(--surface-high);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
