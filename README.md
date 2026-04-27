@@ -1,26 +1,33 @@
-# Wallx Android Store UI
+# Xapps
 
-Modern, ultra-premium, mobile-first Android-only app store web interface.
+Xapps is a premium Android-only app store website built with React + Vite.
 
-## What's included
+## Included
+- Discovery Home page
+- Browse page with filters
+- Search page
+- Category page
+- Charts page
+- Editor's Choice page
+- New Releases page
+- App Detail page
+- Download modal flow (external link ready)
+- Responsive premium UI following DESIGN.md guidance
 
-- Glassmorphism sticky header
-- Search + working navigation buttons
-- Featured hero with CTA actions
-- Android apps + games adaptive grid
-- Categories chips with snap scrolling
-- Curated collections rails
-- Top charts list
-- App detail section with screenshots carousel
-- Expandable description, features, ratings (display-only), version history
-- No account/login/likes/saves features
-- Data-driven structure (easy to replace app data in `script.js`)
+## Removed intentionally
+- Login / Register / Auth
+- User Profile
+- Wishlist
+- Reviews
+- Developer Portal
 
 ## Run
 
-Open `index.html` directly in browser or serve via a static server.
+```bash
+npm install
+npm run dev
+```
 
-## Notes
-
-- Download buttons currently use placeholder external cloud links.
-- Replace `appData` entries in `script.js` with your real apps and links later.
+## Data management
+App records live in `src/data/apps.js`.
+You can add app entries and external download links later.
