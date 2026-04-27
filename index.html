@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wallx Android Store: discover premium Android apps, curated collections, top charts, and direct download links."
+    />
+    <meta name="theme-color" content="#0b0d10" />
+    <title>Wallx Android Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="top-nav" id="top">
+      <div class="logo-wrap" aria-label="Wallx">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Wallx</span>
+      </div>
+
+      <form class="search-wrap" role="search" aria-label="Search Android apps">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search Android apps"
+          autocomplete="off"
+        />
+      </form>
+
+      <div class="nav-icons" aria-label="Quick actions">
+        <button class="icon-btn" data-tooltip="Top Charts" data-scroll="#topCharts">
+          <span aria-hidden="true">🏆</span>
+        </button>
+        <button class="icon-btn" data-tooltip="Collections" data-scroll="#collections">
+          <span aria-hidden="true">🗂️</span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="nav-links" aria-label="Store sections">
+      <button data-scroll="#appsSection" class="active">Apps</button>
+      <button data-scroll="#gamesSection">Games</button>
+      <button data-scroll="#categoriesSection">Categories</button>
+      <button data-scroll="#topCharts">Top Charts</button>
+      <button data-scroll="#collections">Collections</button>
+    </nav>
+
+    <main id="main-content">
+      <section class="hero reveal" id="heroSection" aria-label="Featured Android app">
+        <div class="hero-banner" id="heroBanner"></div>
+      </section>
+
+      <section class="categories reveal" id="categoriesSection" aria-label="Android categories">
+        <div class="section-head">
+          <h2>Browse by category</h2>
+        </div>
+        <div class="chip-row" id="categoryChips"></div>
+      </section>
+
+      <section class="app-grid-section reveal" id="appsSection" aria-label="Android apps">
+        <div class="section-head">
+          <h2>Android Apps</h2>
+          <p>Premium picks for productivity, media, and utility.</p>
+        </div>
+        <div class="app-grid" id="appsGrid"></div>
+      </section>
+
+      <section class="app-grid-section reveal" id="gamesSection" aria-label="Android games">
+        <div class="section-head">
+          <h2>Android Games</h2>
+          <p>High-performance titles optimized for touch and smooth frame pacing.</p>
+        </div>
+        <div class="app-grid" id="gamesGrid"></div>
+      </section>
+
+      <section class="collections reveal" id="collections" aria-label="Curated collections">
+        <div class="section-head">
+          <h2>Collections</h2>
+        </div>
+        <div class="collection-row" id="collectionRow"></div>
+      </section>
+
+      <section class="top-charts reveal" id="topCharts" aria-label="Top charts">
+        <div class="section-head">
+          <h2>Top Charts</h2>
+        </div>
+        <ol class="chart-list" id="chartList"></ol>
+      </section>
+
+      <section class="detail reveal" id="appDetail" aria-label="App details">
+        <div class="detail-head" id="detailHead"></div>
+        <div class="detail-body">
+          <div class="detail-copy">
+            <h3>Description</h3>
+            <p id="detailDescription" class="truncate"></p>
+            <button id="toggleDesc" class="ghost-btn">Read more</button>
+
+            <h3>Features</h3>
+            <ul id="detailFeatures"></ul>
+
+            <h3>Ratings & Reviews</h3>
+            <p id="detailRatings"></p>
+
+            <h3>Version History</h3>
+            <ul id="detailVersions"></ul>
+          </div>
+
+          <div class="detail-shots">
+            <h3>Screenshots</h3>
+            <div class="shot-track" id="shotTrack"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>About</h4>
+        <a href="#">Wallx Android Store</a>
+      </div>
+      <div>
+        <h4>Developer</h4>
+        <a href="#">ashish01-dev</a>
+      </div>
+      <div>
+        <h4>Privacy</h4>
+        <a href="#">Policy</a>
+      </div>
+      <div>
+        <h4>Terms</h4>
+        <a href="#">Usage Terms</a>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
