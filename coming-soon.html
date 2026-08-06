@@ -6,7 +6,7 @@
   <title>Wallx — Coming Soon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after {
       margin: 0;
@@ -38,6 +38,8 @@
       background-position: center 40%;
       background-repeat: no-repeat;
       z-index: 0;
+      filter: blur(3px) brightness(0.92);
+      transform: scale(1.04);
     }
 
     .bg::after {
@@ -75,10 +77,10 @@
     }
 
     .logo-mark {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: clamp(5rem, 18vw, 13rem);
-      font-weight: 400;
-      letter-spacing: 0.12em;
+      font-weight: 900;
+      letter-spacing: -0.02em;
       color: #ffffff;
       text-shadow: 0 0 120px rgba(160, 180, 240, 0.5), 0 4px 40px rgba(0,0,0,0.4);
       line-height: 0.9;
@@ -86,6 +88,7 @@
 
     .logo-mark span {
       color: rgba(255,255,255,0.38);
+      font-weight: 300;
     }
 
     .divider {
@@ -95,19 +98,19 @@
     }
 
     .tagline {
-      font-family: 'Syne', sans-serif;
-      font-size: clamp(1rem, 3vw, 1.4rem);
-      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      font-weight: 500;
       color: rgba(232, 228, 220, 0.82);
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
       line-height: 1.4;
       max-width: 480px;
     }
 
     .subtitle {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(0.72rem, 1.8vw, 0.8rem);
-      font-weight: 500;
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(0.72rem, 1.8vw, 0.78rem);
+      font-weight: 400;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: rgba(200, 215, 255, 0.5);
@@ -157,10 +160,11 @@
     }
 
     .footer-brand {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.3rem;
-      font-weight: 400;
-      letter-spacing: 0.2em;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       color: rgba(255,255,255,0.45);
     }
 
